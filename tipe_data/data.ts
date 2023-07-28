@@ -43,8 +43,8 @@ const objectDefined: {name:string,age:number} = {
 // console.log(objectDefined)
 
 export enum classType {
-  silver= 'silver',
-  gold= "gold",
+  silver=  'silver',
+  gold= "gold" ,
   platinum= "platinum"
 }
 export type customerType = {
@@ -52,5 +52,17 @@ export type customerType = {
   age: number,
   classCustomer: classType
 }
+// bisa menggunakan interface karena jika melakukan compiling ke JS makan tidak terdeteksi
+export interface handphone {
+  merk: string,
+  year: number,
+  readonly description?: string
+}
 
-
+const xiaomi: handphone = {
+  merk: "iphone",
+  year:2022,
+  description: "penggunaan normal dan masih mulus"
+}
+xiaomi.merk = "samsung";
+// xiaomi.description = "sudah rusak" --> tidak bisa diubah merk.descriptio karena readonly

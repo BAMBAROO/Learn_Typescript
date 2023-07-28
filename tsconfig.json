@@ -1,7 +1,8 @@
 {
   "include": [
     "tipe_data/**/*",
-    "test/**/*"
+    "test/**/*",
+    "function/**/*"
   ],
   "exclude": [
     "src/**/*"

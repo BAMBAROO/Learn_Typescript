@@ -1,4 +1,5 @@
 import {classType, customerType, Friends, Profile} from "../tipe_data/data"
+import {add} from "../function/funcInterface";
 
 describe("hello", function () {
 
@@ -34,20 +35,21 @@ describe("hello", function () {
     expect(checker(true)).toBe(false)
   })
 
-it("schema or data alias type", function () {
-  const friends: Friends = {
-    name: "andrew",
-    age: 38
-  }
+  it("schema or data alias type", function () {
+    const friends: Friends = {
+      name: "andrew",
+      age: 38
+    }
 
-  const saya: Profile = {
-    name: "bryan",
-    age: 19,
-    friends : friends
-  }
+    const saya: Profile = {
+      name: "bryan",
+      age: 19,
+      friends : friends
+    }
 
-  expect(saya.friends.name).toBe("andrew")
-})
+    expect(saya.friends.name).toBe("andrew")
+  })
+
   it("enum testing", function () {
     const customer: customerType = {
       name: "bryan",
@@ -55,7 +57,16 @@ it("schema or data alias type", function () {
       classCustomer: classType.platinum
     }
 
-    expect(customer.classCustomer).toBe(2)
-    console.log(customer)
+    expect(customer.classCustomer).toBe("platinum")
+    console.log(customer.classCustomer)
+  })
+
+  it("function inter face", function () {
+    const addNumber: add = (number1: number, number2: number): number => {
+      return number1 + number2
+    }
+    const result: number = addNumber(1,2)
+    expect(result).toEqual(3)
+    console.log({ result })
   })
 })
