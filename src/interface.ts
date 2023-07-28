@@ -33,3 +33,17 @@ const bryan: Manusia = {
     kaki:true,
     hidung: true
 }
+
+interface Person {
+    name: string,
+    sayHello(name:string):string
+}
+
+const objectPerson: Person = {
+    name: "bryan",
+    sayHello(name: string): string {
+        return `Hello ${name} from ${this.name}`
+    }
+}
+const result = objectPerson.sayHello("budi")
+console.log(result)

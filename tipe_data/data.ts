@@ -66,3 +66,18 @@ const xiaomi: handphone = {
 }
 xiaomi.merk = "samsung";
 // xiaomi.description = "sudah rusak" --> tidak bisa diubah merk.description karena readonly
+
+interface ArrayString {
+  [index: number]: string
+}
+const arrayBiasa:ArrayString = ["bryan", "athallah", "siregar"]
+// console.log(arrayBiasa[2])
+
+interface ObjectString {
+  [key:string]:string
+}
+const objectBiasa:ObjectString = {
+  name: "bryan",
+  power: "money"
+}
+console.log(objectBiasa["name"])
