@@ -43,7 +43,7 @@ const objectDefined: {name:string,age:number} = {
 // console.log(objectDefined)
 
 export enum classType {
-  silver=  'silver',
+  silver= 'silver',
   gold= "gold" ,
   platinum= "platinum"
 }
@@ -65,4 +65,4 @@ const xiaomi: handphone = {
   description: "penggunaan normal dan masih mulus"
 }
 xiaomi.merk = "samsung";
-// xiaomi.description = "sudah rusak" --> tidak bisa diubah merk.descriptio karena readonly
+// xiaomi.description = "sudah rusak" --> tidak bisa diubah merk.description karena readonly

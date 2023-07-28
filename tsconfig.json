@@ -1,11 +1,11 @@
 {
   "include": [
     "tipe_data/**/*",
-    "test/**/*",
-    "function/**/*"
+    "function/**/*",
+    "src/**/*"
   ],
   "exclude": [
-    "src/**/*"
+    "test/**/*"
   ],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
