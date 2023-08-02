@@ -80,4 +80,4 @@ const objectBiasa:ObjectString = {
   name: "bryan",
   power: "money"
 }
-console.log(objectBiasa["name"])
+// console.log(objectBiasa["name"])

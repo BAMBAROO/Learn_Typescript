@@ -58,7 +58,7 @@ describe("hello", function () {
     }
 
     expect(customer.classCustomer).toBe("platinum")
-    console.log(customer.classCustomer)
+    // console.log(customer.classCustomer)
   })
 
   it("function inter face", function () {
@@ -67,6 +67,24 @@ describe("hello", function () {
     }
     const result: number = addNumber(1,2)
     expect(result).toEqual(3)
-    console.log({ result })
+    // console.log({ result })
+  })
+
+  it("should be a class", function (): void {
+    class People {
+      name: string;
+      age: number;
+      job?: string;
+
+      constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+    const bryan: People = new People("bryan", 19)
+    expect(bryan.name).toBe("bryan")
+    bryan.job = "programmer"
+    expect(bryan.job).toBe("programmer")
+    console.info(bryan)
   })
 })

@@ -43,10 +43,12 @@ function menghindar(a: number, b: number) : void {
 }
 // menghindar(2,3)
 
+// menjadikan kode dibawah ini seperti type yang ada pada file Person.ts
+
 const person: any = {
     name: "bryan",
     age: 19
 }
 
 const person2: Person = person as Person
-console.info(person.sayHello("budi"))
+console.info(person2)
