@@ -1,4 +1,5 @@
 class Customer {
+    // harus melakukan deklarasi terlebih dahulu
     name: string = "anonymous";
     readonly age: number;
     job?: string;
@@ -13,6 +14,6 @@ class Customer {
     }
 }
 
-const bryan =  new Customer("bryan", 18)
+const bryan: Customer =  new Customer("bryan", 18)
 bryan.job = "programmer"
 bryan.print()
