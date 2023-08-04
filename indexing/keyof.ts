@@ -1,16 +1,18 @@
 interface Hero {
     name: string,
-    role: string
+    role: string,
+    rank: number
 }
 
-const hunter: Hero = {
-    name: "bryan",
-    role: "fighter"
-}
+// const hunter: Hero = {
+//     name: "bryan",
+//     role: "fighter"
+// }
 
-console.log(Object.keys(hunter))
+const hadir: keyof Hero = "name"
+console.info(hadir)
 
-// const result: keyof Hero = "name"
+// console.log(Object.keys(hunter))
 // const key: string = "name"
 // const trueKey: keyof Hero = "name"
 // console.log(hunter[trueKey])
