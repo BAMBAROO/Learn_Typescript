@@ -1,11 +1,11 @@
-type anime = "conan" | "naruto" | "hunterxhunter"
+type anime = "conan" | "naruto" | "hunterxhunter";
 
-// type spesAnime = Record<anime, boolean>;
+type spesAnime = Record<anime, boolean>;
 
-interface spesAnime {
-    [key: anime]: string
-
-}
+// interface spesAnime {
+//     [key: anime]: string
+//
+// }
 
 const animeSeru: spesAnime = {
     conan: true,
